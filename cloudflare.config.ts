@@ -26,7 +26,10 @@ export default defineConfig(({ mode }) => {
         triggers.scheduled({ schedule: '30 9 * * *' }),
       ],
       env: {
-        DB: bindings.d1({ name: 'bigflower-today-db' }),
+        DB: bindings.d1({
+          name: 'bigflower-today-db',
+          id: 'c553f44b-6102-4512-bac5-5bd1b5b39a8c',
+        }),
         // 线上启用 Cloudflare Workers AI 免费层（Clef 质检裁判 + GPT-OSS 120B 格式兜底）
         AI: isDev ? undefined : bindings.ai(),
         // Cloudflare 原生邮件发送绑定（解析器告警直发邮箱，不污染前台 UI）
