@@ -18,10 +18,8 @@ export default defineConfig(({ mode }) => {
       triggers: [
         // JST 周一/三/五 08:00-08:45（UTC 周日/二/四 23:00-23:45）
         triggers.scheduled({ schedule: '0,15,30,45 23 * * SUN,TUE,THU' }),
-        // JST 周一/三/五 09:00-11:45（UTC 周一/三/五 00:00-02:45）
-        triggers.scheduled({ schedule: '0,15,30,45 0-2 * * MON,WED,FRI' }),
-        // JST 周一/三/五 12:00（UTC 周一/三/五 03:00）
-        triggers.scheduled({ schedule: '0 3 * * MON,WED,FRI' }),
+        // JST 周一/三/五 09:00-12:45（UTC 周一/三/五 00:00-03:45）
+        triggers.scheduled({ schedule: '0,15,30,45 0-3 * * MON,WED,FRI' }),
         // 每日 JST 18:30 兜底同步（UTC 09:30）
         triggers.scheduled({ schedule: '30 9 * * *' }),
       ],
