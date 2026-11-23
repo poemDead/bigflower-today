@@ -205,7 +205,10 @@ export function DictionaryDrawer({
               <Search size={14} className="search-icon" />
               <input
                 className="search-input"
-                type="text"
+                type="search"
+                enterKeyHint="search"
+                autoCapitalize="none"
+                autoCorrect="off"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="搜索日文、中文、英文或原始花名..."

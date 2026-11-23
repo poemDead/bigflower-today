@@ -453,7 +453,7 @@ export function App() {
           <div className="brand-mark" aria-hidden="true">
             <Flower2 size={15} />
           </div>
-          <h1 className="brand-title">Big Flower · 朝花手帖</h1>
+          <h1 className="brand-title">大花花进货单</h1>
         </div>
 
         <nav className="topbar-actions" aria-label="快捷入口">
@@ -661,7 +661,10 @@ export function App() {
                 <Search size={14} className="search-icon" />
                 <input
                   className="search-input"
-                  type="text"
+                  type="search"
+                  enterKeyHint="search"
+                  autoCapitalize="none"
+                  autoCorrect="off"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   placeholder="找一种花：蓝冰柏、バラ、Ranunculus..."

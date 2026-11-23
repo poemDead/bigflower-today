@@ -101,6 +101,9 @@ export function EditFlowerModal({
               <input
                 id="cleanedJa"
                 type="text"
+                enterKeyHint="next"
+                autoCapitalize="none"
+                autoCorrect="off"
                 value={cleanedJa}
                 onChange={(e) => setCleanedJa(e.target.value)}
                 required
@@ -113,6 +116,7 @@ export function EditFlowerModal({
               <input
                 id="zhName"
                 type="text"
+                enterKeyHint="next"
                 value={zhName}
                 onChange={(e) => setZhName(e.target.value)}
                 placeholder="例如：蓝冰柏"
@@ -124,6 +128,8 @@ export function EditFlowerModal({
               <input
                 id="enName"
                 type="text"
+                enterKeyHint="done"
+                autoCorrect="off"
                 value={enName}
                 onChange={(e) => setEnName(e.target.value)}
                 placeholder="例如：Arizona Cypress 'Blue Ice'"
