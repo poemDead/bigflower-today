@@ -1,0 +1,8 @@
+# 本地开发环境变量（已加入 .gitignore，不会被提交到 GitHub）
+# 推荐：OpenRouter + DeepSeek V4.1 Flash（盲测第一名，89种约 3.3 美分）
+OPENROUTER_API_KEY=your-openrouter-api-key
+OPENROUTER_MODEL=deepseek/deepseek-v4.1-flash-1017
+
+# 备选：直连 Anthropic
+# ANTHROPIC_API_KEY=your-anthropic-api-key
+# ANTHROPIC_MODEL=claude-haiku-5-5

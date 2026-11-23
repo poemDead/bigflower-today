@@ -1,0 +1,37 @@
+{
+  "name": "bigflower-today",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cf dev",
+    "dev:vite": "vite",
+    "build": "tsc -b && cf build",
+    "deploy": "cf deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --noEmit",
+    "set-key": "node scripts/setup-key.mjs",
+    "set-openrouter-key": "node scripts/setup-openrouter-key.mjs",
+    "test:openrouter": "node scripts/test-openrouter.mjs",
+    "db:migrate:local": "cf d1 migrations apply bigflower-today-db --local"
+  },
+  "dependencies": {
+    "@openrouter/sdk": "^1.5.129",
+    "hono": "^4.7.0",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-rc.3",
+    "@cloudflare/workers-types": "^4.20250401.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "cf": "latest",
+    "typescript": "^5.8.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

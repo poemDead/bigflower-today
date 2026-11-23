@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.cloudflare/
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.tsbuildinfo
+bench/
+.agents/
+.claude/
+skills-lock.json
