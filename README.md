@@ -1,5 +1,6 @@
 # 朝花手帖 · Cut-Flower Arrival Notes
 > **Cut-Flower Arrival Notes** · Daily cut-flower arrival tracking and Japanese flower-name normalization for a small family flower studio in Tokyo. Runs entirely on Cloudflare's free tier (Workers · D1 · Cron · Email), with an LLM pipeline that turns messy supplier messages into clean, structured arrival notes.
+> Live: https://bigflower.dawnlight-flora.com/
 
 一个跑在 **Cloudflare 全家桶免费层** 上的切花到货追踪与日文花名整理 Web 应用。
 
